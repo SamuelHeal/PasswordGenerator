@@ -18,6 +18,11 @@ function generatePassword() {
   if (parseInt(passLength) >= 8 && parseInt(passLength) <= 128){
     valid = true
   }
+
+  else if (!passLength){
+    return;
+
+  }
   else{
     alert("You did not enter a number between 8 and 128, please press OK and restart")
   }
